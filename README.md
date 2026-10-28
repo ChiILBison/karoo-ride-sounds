@@ -8,9 +8,13 @@ Ride Sounds is a free-for-personal-use beta extension that plays speaker-tuned c
 
 Share this page or the official link above. Do not mirror or send copies of the application. The source code is privately maintained and is not included in this repository or download.
 
-Official ZIP SHA-256: `23af679a213d2d599c5a33563cc45096b5a45b7eae7bf3196513f2175e75db44`
+Official ZIP SHA-256: `c9bc8a0bf2616c7bf89b4ed2b7fdc52a57b6abeecc1833c06d7c70bc7324013e`
+
+Official APK SHA-256: `26821aec360cd0140da63aa4f6e807896812de6518bf2fc39e4662dd4e5ba973`
 
 Official APK signing-certificate SHA-256: `02a7b16b6c87afd4c47d5cf7f65270f364180e7b4c738056af19f837c27be681`
+
+The October 27 hotfix prevents the Rush approach cue from replaying when a live segment changes from approaching to in progress. The reliable start fallback remains active when Karoo never supplies an approach signal.
 
 Built-in cue names: **Ride Start, Pause, Rush, Invincible, Cha-ching, Level-up, Completion, Climb, Bunnyhop, Blast, End, Extra, and Enter.**
 

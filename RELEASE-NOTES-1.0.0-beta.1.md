@@ -10,7 +10,7 @@ October 30 segment handoff hotfix:
 - Kept missing distance metadata from creating another segment identity.
 - Preserved genuine new starts, repeat attempts, completion/record sounds, the under-three-minute loop option, and the October 28 Ride Start repair.
 - Preserved approved sound patterns, icon, preferences and button assignments.
-- Passed 244 unit-test executions (122 debug and 122 release), including two retained device traces plus synthetic overlap and interruption tests. Release lint has no errors.
+- Passed 246 unit-test executions (123 debug and 123 release), including two retained device traces plus synthetic overlap and interruption tests. Release lint has no errors.
 - Installed and connection-verified on a Karoo 3. Real-ride confirmation of this update remains pending; automated replays are not a substitute for GPS and speaker testing.
 
 - Free for personal, noncommercial use.
@@ -22,8 +22,8 @@ October 30 segment handoff hotfix:
 
 Download the ZIP, verify its adjacent SHA-256 checksum if desired, and follow `INSTALL.md` inside the download.
 
-ZIP SHA-256: `2659f07f9656b59bf9dd488ade9645fc1b8cefc9e27a9fa65188ff87c23934eb`
+ZIP SHA-256: `3554ebb5d305f458a41c64f211de3fd6c9033abff634956fad4589d93890afd4`
 
-APK SHA-256: `a8f4c12ecf4350a8c3400228c091a63d0abaa12f5874850963070203c45765aa`
+APK SHA-256: `a6c07af0b1a607dc96fd300d2aba8c3e018ed8abb8dc5ac9f789ad3fff59dbe1`
 
 APK signing-certificate SHA-256: `02a7b16b6c87afd4c47d5cf7f65270f364180e7b4c738056af19f837c27be681`

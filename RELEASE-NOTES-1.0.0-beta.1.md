@@ -2,17 +2,16 @@
 
 This is the official signed beta for Karoo 2 and Karoo 3 testing.
 
-October 28 hotfix (includes the October 27 segment fix):
+October 30 segment handoff hotfix:
 
-- Ride Start now survives auto-pause/manual pause during its 2.5-second delay.
-- A new ride first reported as paused after idle also triggers Ride Start; resuming an existing ride does not replay it.
-- Ending the ride or stopping the runtime still cancels stale start cues.
-- Rush now plays during live-segment approach without replaying when the segment starts.
-- Invincible begins at the segment start as before.
-- The start fallback still plays Rush when Karoo provides no usable approach signal.
-- Added regression coverage for overlapping status sources, anonymous segments, and genuine approach cancellation.
-- Added persistent start diagnostics and regression coverage. All 208 test executions passed (104 debug and 104 release); release lint has no errors.
-- Installed and connection-verified on a Karoo 3; real-ride confirmation of these timing fixes is still pending.
+- Fixed a remaining duplicate Rush on the second progress update after a controller-supplied approach.
+- Kept approaches separate for overlapping segments; removing or reordering cards does not create another anonymous approach.
+- Prevented single-play Invincible from restarting after feed recovery or a late selection of an already-running segment.
+- Kept missing distance metadata from creating another segment identity.
+- Preserved genuine new starts, repeat attempts, completion/record sounds, the under-three-minute loop option, and the October 28 Ride Start repair.
+- Preserved approved sound patterns, icon, preferences and button assignments.
+- Passed 244 unit-test executions (122 debug and 122 release), including two retained device traces plus synthetic overlap and interruption tests. Release lint has no errors.
+- Installed and connection-verified on a Karoo 3. Real-ride confirmation of this update remains pending; automated replays are not a substitute for GPS and speaker testing.
 
 - Free for personal, noncommercial use.
 - Karoo 3 behavior is inherited from the validated personal build.
@@ -23,8 +22,8 @@ October 28 hotfix (includes the October 27 segment fix):
 
 Download the ZIP, verify its adjacent SHA-256 checksum if desired, and follow `INSTALL.md` inside the download.
 
-ZIP SHA-256: `4c9aa601385a58a5a9384346751823fbcd693d06a8e684a900c1fd459a70dbaa`
+ZIP SHA-256: `2659f07f9656b59bf9dd488ade9645fc1b8cefc9e27a9fa65188ff87c23934eb`
 
-APK SHA-256: `264657d3091cc5ebdc8194e14e3325eb0b966181173b637bd71f7df18cb16a9d`
+APK SHA-256: `a8f4c12ecf4350a8c3400228c091a63d0abaa12f5874850963070203c45765aa`
 
 APK signing-certificate SHA-256: `02a7b16b6c87afd4c47d5cf7f65270f364180e7b4c738056af19f837c27be681`

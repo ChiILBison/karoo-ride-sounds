@@ -8,13 +8,13 @@ Ride Sounds is a free-for-personal-use beta extension that plays speaker-tuned c
 
 Share this page or the official link above. Do not mirror or send copies of the application. The source code is privately maintained and is not included in this repository or download.
 
-Official ZIP SHA-256: `4c9aa601385a58a5a9384346751823fbcd693d06a8e684a900c1fd459a70dbaa`
+Official ZIP SHA-256: `2659f07f9656b59bf9dd488ade9645fc1b8cefc9e27a9fa65188ff87c23934eb`
 
-Official APK SHA-256: `264657d3091cc5ebdc8194e14e3325eb0b966181173b637bd71f7df18cb16a9d`
+Official APK SHA-256: `a8f4c12ecf4350a8c3400228c091a63d0abaa12f5874850963070203c45765aa`
 
 Official APK signing-certificate SHA-256: `02a7b16b6c87afd4c47d5cf7f65270f364180e7b4c738056af19f837c27be681`
 
-The October 28 hotfix keeps Ride Start from being cancelled by an immediate auto-pause and recognizes new rides first reported as paused. It also includes the October 27 fix for Rush replaying at a live-segment start. The reliable segment-start fallback remains active when Karoo never supplies an approach signal. The signed build passed 208 unit-test executions and is installed on a Karoo 3; real-ride timing confirmation is still pending.
+The October 30 hotfix corrects a remaining duplicate Rush on the second progress update and prevents selection changes or feed recovery from treating an ongoing segment as a new start. Pending approaches are tracked separately for overlapping segments. The zero-elapsed start fallback remains available when no approach was received; late-selected ongoing segments do not get a false start cue. The October 28 Ride Start repair is retained. The signed build passed 244 unit-test executions, including two captured device traces and synthetic overlap/recovery regressions, and is installed on a Karoo 3. Real-ride timing confirmation of this update remains pending.
 
 Built-in cue names: **Ride Start, Pause, Rush, Invincible, Cha-ching, Level-up, Completion, Climb, Bunnyhop, Blast, End, Extra, and Enter.**
 
